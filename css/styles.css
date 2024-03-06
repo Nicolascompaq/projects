@@ -23,6 +23,16 @@ body{
     font-size: 17px;
    
 }
+.buy1{
+    background-color:#FFBF00;
+    border: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    margin:10px 10px 0px 140px;
+    float: right;
+    font-size: 17px;
+}
 #search1{
     width: 50%;
     height: 45px;
