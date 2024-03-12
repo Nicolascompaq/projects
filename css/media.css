@@ -1,0 +1,39 @@
+@media only screen and (max-width:520px){
+.nav1{
+    height: fit-content;
+    position: fixed;
+    backdrop-filter: blur(3px);
+    background-color:#5c774dd4 ;
+}
+.buy{
+    position: absolute;
+    left: 57%;
+   height: 40px;
+
+}
+#search3{
+    width: 85%;
+    margin-left: 0px;
+}
+.search-btn{
+    width: 15%;
+}
+.welcome{
+    margin-top: 40%;
+ 
+}
+.head2{
+    margin-top: 22px;
+}
+.hdep{
+    font-size: 60px;
+}
+.card{
+   width: 90%;
+    box-shadow:rgba(61, 63, 61, 0.712) 7px 1px 9px 1px ;
+    }
+    .most{
+       
+        margin-top: 50%;
+    }
+}
