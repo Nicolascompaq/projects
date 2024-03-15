@@ -183,7 +183,7 @@ box-shadow:rgba(61, 63, 61, 0.712) 7px 1px 9px 1px ;
     position: absolute;
     margin-left: 50px;
     font-size: 30px;
-    top: 70px;
+    top: 80px;
 
     color: rgb(61, 63, 61);
     
@@ -191,7 +191,7 @@ box-shadow:rgba(61, 63, 61, 0.712) 7px 1px 9px 1px ;
 }
 .platfrom{
     width: 85%;
-margin-top: 40px;
+margin-top: 150px;
 
 }
 .back{
@@ -204,7 +204,7 @@ margin-top: 40px;
     background-size: contain ;
     float:left;
     position: absolute;
-    margin-top: 5%;
+    margin-top: 15%;
 
 }
 .platfrom :nth-child(1){
@@ -284,7 +284,7 @@ margin-top: 40px;
     background-color: rgba(232, 250, 213, 0.589);
     border: none;
     font-size: larger;
-    width:130px;
+    width:138px;
     font-weight: bold;
 }
 .follwing{
