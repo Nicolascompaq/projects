@@ -12,25 +12,16 @@
 
 </head>
 <body>
-    <header>
-        <div class="container-{breakpoint}">
-        <div class="row">
-            <div class="col-lg-12 col-sm-12">
-                <div class="nav nav1" >
-                    <span class="head1" > 4BoND</span>
-                    <span class="head2">.shop</span>   
-                    <input  type="search" id="search3" placeholder="Hey search for a car here" >
-                    <button class="search-btn" >search</button> <button class="buy" style="margin-left: 10%;">Buy Now</button>
-                  </div>
-            </div>
-        </div>
-    </div>
-    </header>
+   
+    <?php include("nav.php"); ?>
+    <?php include("nav3.php"); ?>
+
+
    
 <main>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6 col-sm-12  text-lg-start">
+            <div class="col-lg-6 col-sm-12  text-lg-start pb-lg-3 ps-lg-4" >
                 <div class="welcome">
                     <h1 class="hdep"><span class="b">B</span>uy<br> New car now</h1>
                 </div>
@@ -39,10 +30,10 @@
                     best car prices and specifications to fit your new ride.
                     <br>welcome customer...
                 </p>
-                <a href="projects.html"><button class="btn1">Enter bond</button></a>
+                <a href="projects.php"><button class="btn1">Enter bond</button></a>
             </div>
             <div class="col-lg-6 col-sm-12 text-lg-center">
-                <img src="images/luxury1.webp" class="img1 img-fluid">
+                <img src="images/2019-Jeep-Wrangler-Green-small.png" class="img1 img-fluid">
 
             </div>
         </div>

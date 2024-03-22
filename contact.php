@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-lg-12 col-sm-12">
                     <div class="nav nav1 fixed-top" >
-                        <span class="head1" > 4BoND</span>
+                    <a href="home" style="text-decoration: none;"><span class="head1" > 4BoND</span></a>
                         <span class="head2">.shop</span>   
                         <input  type="search" id="search3" placeholder="Hey search for a car here" >
                         <button class="search-btn" >search</button> <button class="buy" style="margin-left: 10%;">Buy Now</button>
@@ -31,23 +31,7 @@
     <div class="container-{breakpoint} ">
         <div class="row me-lg-0 ">
             <div class="container d-inline-flex ">
-            <div class="col-lg-2">
-
-
-                <div class="container-{breakpoint} sticky-top " style="  background-color:rgb(61, 63, 61) ; width: 100%; height: 100vh; text-align: center;">
-                    <nav class="navbar bg-body-tertiary navbar-expand-lg justify-content-center sticky-top " style=" height: 70vh;">
-                        <div class="container-fluid " style="width: 100%;">
-                        <ul class="nav flex-column  ms-lg-0" >
-                            <li class="nav-item" ><a class="nav-link " href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">Service</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        
-                        </ul>
-                    </div>
-                       </nav>    
-                </div>
-                </div>
+            <?php include("nav2.php"); ?>
                 <div class="col-lg-10 me-lg-0 ">
 
                 <div class="" style="background-color: rgb(67, 128, 6); width: 100%; height: 100vh;">

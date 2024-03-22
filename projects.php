@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-lg-12 col-sm-12">
                 <div class="nav nav1 fixed-top" >
-                    <span class="head1" > 4BoND</span>
+                <a href="home" style="text-decoration: none;"><span class="head1" > 4BoND</span></a>
                     <span class="head2">.shop</span>   
                     <input  type="search" id="search3" placeholder="Hey search for a car here" >
                     <button class="search-btn" >search</button> <button class="buy" style="margin-left: 10%;">Buy Now</button>
@@ -30,22 +30,8 @@
         <div class="container-{breakpoint} ">
         <div class="row me-lg-0 ">
            <div class="container d-inline-flex ">
-            <div class="col-lg-2">
-          
-                <div class="container-{breakpoint} sticky-top " style="  background-color:rgb(61, 63, 61) ; width: 100%; height: 100vh; text-align: center;">
-                    <nav class="navbar bg-body-tertiary navbar-expand-lg justify-content-center sticky-top " style=" height: 70vh;">
-                        <div class="container-fluid " style="width: 100%;">
-                        <ul class="nav flex-column  ms-lg-0" >
-                            <li class="nav-item" ><a class="nav-link " href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">Service</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        
-                        </ul>
-                    </div>
-                       </nav>    
-                </div>
-            </div>
+            <?php include("nav2.php"); ?>
+       
             
             <div class="col-lg-10 me-lg-0 ">
                 
@@ -128,22 +114,39 @@
         
                             
                                 
-                                <div id="carouselExample" class="carousel slide" >
+                                <div id="carouselExample" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
                                     <div class="carousel-inner" ">
                                       <div class="carousel-item active"  >
-                                        <img src="images/auto5pix.jpg" class="d-block w-100" alt="..." >
+                                        <img src="images/auto5pix.jpg" class="d-block w-100 cas_img" alt="..."  >
+                                        <div class="carousel-caption d-none d-md-block" style="color:black;">
+        <h5>Most affordable</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
                                         
                                       </div>
                                       <div class="carousel-item">
-                                        <img src="images/modern-light-green-car-crossover-for-travel-with-black-insets-in-front-3d-render-on-white-background-with-shadow-2A604AC.jpg" class="d-block w-100" alt="..."  >
+                                        <img src="images/modern-light-green-car-crossover-for-travel-with-black-insets-in-front-3d-render-on-white-background-with-shadow-2A604AC.jpg" class="d-block w-100 cas_img" alt="..."  >
+                                        <div class="carousel-caption d-none d-md-block" style="color:black;">
+        <h5>Most classic</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
                                       </div>
                                       <div class="carousel-item">
-                                        <img src="images/103611185-modern-green-car-crossover-in-front-3d-render-on-white-background-with-shadow.jpg" class="d-block w-100" alt="..." >
+                                        <img src="images/103611185-modern-green-car-crossover-in-front-3d-render-on-white-background-with-shadow.jpg" class="d-block w-100 cas_img" alt="..." >
+                                        <div class="carousel-caption d-none d-md-block" style="color:black;">
+        <h5>first choice</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
                                       </div>
                                     </div>
                                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Previous</span>
+                                      <span class="visually-hidden" >Previous</span>
                                     </button>
                                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -153,7 +156,7 @@
 
                                
                             
-                          
+                                  <span class="most1">Recently  Added</span>
                     
                         <div class="card">
                             <div class="card-header" style="color: rgb(9, 38, 70); font-weight: bold; text-align: center; letter-spacing: 4px; font-size: 20px; background-color: rgb(166, 200, 248)">
