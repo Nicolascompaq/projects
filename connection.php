@@ -6,12 +6,8 @@ $dbName = "orders";
 
 $con = mysqli_connect($serverName,$userName,$password,$dbName);
 if(!$con){
-    echo "access dined";
-}else{
-    echo
-     "connection successfully";
+    die ("access dined" .  mysqli_error($connect));
 }
-
 
 
 ?>

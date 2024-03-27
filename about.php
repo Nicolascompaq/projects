@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,34 +15,23 @@
 
 </head>
 <body>
-    <header>
-        <div class="container-{breakpoint}">
-            <div class="row">
-                <div class="col-lg-12 col-sm-12">
-                    <div class="nav nav1 fixed-top" >
-                    <a href="home" style="text-decoration: none;"><span class="head1" > 4BoND</span></a>
-                        <span class="head2">.shop</span>   
-                        <input  type="search" id="search3" placeholder="Hey search for a car here" >
-                        <button class="search-btn" >search</button> <button class="buy" style="margin-left: 10%;">Buy Now</button>
-                      </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    
+<?php
+include("nav-ident.php")
+?>
+
     <div class="container-{breakpoint} ">
         <div class="row ">
             <div class="container-{breakpoint} d-inline-flex me-lg-0">
-            <div class="col-lg-2" style="position: fixed;">
+            <div class="col-lg-2 col-sm-0" style="position: fixed;">
 
             <?php include("nav2.php"); ?>
 
                 </div>
-                <div class="col-lg-10 " style="margin-left: 17%;">
+                <div class="col-lg-10  col-sm-12" style="margin-left: 17%;">
 
-                <div class="" style="background-color: rgb(67, 128, 6); width: 100%; height: 100vh; ">
+                <div   class="hup" style="background-color: rgb(67, 128, 6); width: 100%; height: 100vh; ">
                  
-       <div class="row" style="margin-top: 7%; height: 60vh; background-repeat: no-repeat; background-size: cover;  background-image:url(images/106177799-green-automobile-isolated-on-white-background.jpg) ; padding-right: 0px;" >
+       <div  class="row" style="margin-top: 7%; height: 60vh; background-repeat: no-repeat; background-size: cover;  background-image:url(images/106177799-green-automobile-isolated-on-white-background.jpg) ; padding-right: 0px;" >
     
             <div class=""  style=" width: 100%;  background:linear-gradient(200deg, rgb(61, 63, 61) ,rgba(0, 0, 0, 0.651)) ,transparent;" >
                 <h4  style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 100px; color: aliceblue;">About us
@@ -71,13 +63,16 @@ with a careful curated selection of pre-owned cars from trysted sellers.
             </p>
         </div>
        </div>
+
+
+
        <div class="row">
         <div class="col-12">
         <p>
             <h4 style="color: #5C774D; font-size: 35px; ">Board</h4>
             <hr>
             <ol >
-                <li><img class="board" src="images/nico_11.jpg">
+                <li><img class="board" src="images/nico_8.jpg">
                     <br>Director
                 </li>
                 <li><img class="board" src="images/p12.jpg">
@@ -92,15 +87,18 @@ with a careful curated selection of pre-owned cars from trysted sellers.
         </p>
     </div>
        </div>
+       <?php
+include("footer.php");
+?>
+
+</div>
+</div>
 
 
 </div>
 </div>
 
-
 </div>
-</div>
-</div>
-
+<script src="bootstrap\js\bootstrap.min.js"></script>
 </body>
 </html>

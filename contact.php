@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,20 +17,9 @@
 
 </head>
 <body>
-    <header>
-        <div class="container-{breakpoint}">
-            <div class="row">
-                <div class="col-lg-12 col-sm-12">
-                    <div class="nav nav1 fixed-top" >
-                    <a href="home" style="text-decoration: none;"><span class="head1" > 4BoND</span></a>
-                        <span class="head2">.shop</span>   
-                        <input  type="search" id="search3" placeholder="Hey search for a car here" >
-                        <button class="search-btn" >search</button> <button class="buy" style="margin-left: 10%;">Buy Now</button>
-                      </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <?php
+    include("nav-ident.php")
+    ?>
     
     <div class="container-{breakpoint} ">
         <div class="row me-lg-0 ">
@@ -52,7 +45,11 @@
     <li class="links">wordpress</li>
 </ul>
 
-<p class="tel"><a href="tel:0753094387" >hotline:<br><input type="tel" value="0753094387"readonly></a></p>
+        <div class="foot1">
+        <?php
+include("footer.php");
+?>
+        </div>
 
 </div>
 </div>
@@ -62,6 +59,6 @@
 </div>
 </div>
 </div>
-
+<script src="bootstrap\js\bootstrap.min.js"></script>
 </body>
 </html>

@@ -137,7 +137,7 @@ color: black;
     border-radius: 10px 10px  0px 10px;
     color: rgba(39, 46, 42, 0.737);
    
-    background: linear-gradient(220deg,#FFBFrgba(61, 63, 61, 0.799)61));
+    background: linear-gradient(220deg,#FFBF61,rgba(61, 63, 61, 0.799));
 }
 
 .img1{
@@ -167,14 +167,19 @@ color: black;
 }
 .most1{
     display: flex;
-    background-color: #5C774D;
+    background-color: #5c774d;
     height: fit-content;
    width: 80%;
-   
+   border-top:3px solid #CF9;
     color: rgb(61, 63, 61);
     padding-left: 40px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+}
+#form{
+    width: 30%;
+    height: 400px;
+    margin-left: 15px; 
 }
 .card{
 width: 30%;
@@ -283,21 +288,28 @@ margin-top: 150px;
 .tel{
     width: 100%;
     height: 70px;
-    background-color: #CF9;
+    background-color:black;
     text-align: center;
+    
   
 }
 .tel a{
-    color: #5c774da0;
-    text-decoration: underline;
-    font-size: 19px;
+    color: rgb(61, 63, 61);
+  
+    font-size: 17px;
     
 }
+.tel a:hover{
+  
+    color:#CF9 ;
+    text-decoration: none;
+ }
 .tel input{
-    background-color: rgba(232, 250, 213, 0.589);
+    background-color: transparent;
     border: none;
-    font-size: larger;
-    width:138px;
+    font-size: 19px;
+    width:180px;
+    color:rgb(61, 63, 61) ;
     font-weight: bold;
 }
 .follwing{
@@ -354,15 +366,75 @@ ol , li{
 }
 .carousel.slide {
     width: 100%; 
-    max-width: 770px !important; 
-   margin-left: 18%;
+    max-width: 1000px !important; 
+   margin-left: 2%;
+
+}
+.controller{
+    max-height: 400px !important;
+width: 100%;
+border-radius:25px;
+
+}
+.carousel-item{
+    width: 100%; 
+height: 400px;
+border-radius:25px;
+}
+.carousel-inner{
+    border-radius:25px;
 }
 .cas_img{
     width: 100%;
-    height: 100vh;
+    height:400px;
+   
 }
 .carousel-caption{
     background-color: #5c774da0;
     margin-left: 0px;
     display: flex;
+}
+.footer{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    text-align: center;
+    margin-left: 0px;
+    color: rgb(61, 63, 61);
+}
+.help{
+    color: rgb(61, 63, 61);
+    font-weight: bold;  
+    font-size: 17px;
+    text-decoration: none;
+
+}
+.help:hover{
+  
+   color:#CF9 ;
+}
+.foot1{
+    width: 100%;
+    height: fit-content;
+}
+.offcanvas{
+    height: 55vh;
+    overflow: hidden;
+    
+    
+}
+.offcanvas-header{
+
+    background-color:rgb(61, 63, 61) ;
+    border: none;
+}
+.offcanvas-body{
+    background-color:rgb(61, 63, 61) ;
+    height: fit-content;
+    border: none;
+
+}
+/**
+my{
+    rgba(232, 250, 213, 0.589)
 }

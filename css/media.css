@@ -7,16 +7,34 @@
 }
 .buy{
     position: absolute;
-    left: 57%;
+    right: 5%;
+    top: 15%;
    height: 40px;
 
 }
 #search3{
-    width: 85%;
+    width: 70%;
     margin-left: 0px;
 }
 .search-btn{
     width: 15%;
+}
+#menu{
+width: 15%;
+background-color:rgb(247, 253, 241);
+border-radius:0px;
+height: 45px ;
+border: none;
+font-size: 16px;
+margin-top: 1%;
+}
+#menu:hover{
+    border: none;
+    box-shadow: none;
+}
+#menu:focus{
+    border: none;
+    box-shadow: none;
 }
 .welcome{
     margin-top: 40%;
@@ -35,5 +53,15 @@
     .most{
        
         margin-top: 50%;
+    }
+    .nav2{
+        display: none;
+    }
+    .hup{
+        margin-top: 33%;
+    
+    }
+    #nav-3{
+        display: none;
     }
 }
