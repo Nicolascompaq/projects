@@ -1,22 +1,49 @@
 <?php
 session_start();
-include("connection.php");
+require_once('connection.php');
 
-if ($_SERVER['REQUEST_METHOD'] =="POST") {
-    $email=$_POST['email'];
-    $name =$_POST['name'];
-    $comment =$_POST['comment'];
+if($_SERVER['REQUEST_METHOD'] == "POST")
+{
+    //something was posted
+    $email = $_POST['email'];
+    $name = $_POST['name'];
+    $comment = $_POST['comment'];
 
+
+   $query = "select * from massages where email = '$email' limit 1";
+$result = mysqli_query($con, $query);
+ 
+    if(mysqli_num_rows($result) > 0){
+ 
+        echo "<script>alert('you have already commented')</script>";
+    }else
+   {
    
-}else{
-    if(!empty($email) && !empty($name) && !empty($comment)){
-        $query = "INSERT INTO massages ('email','name','comment') values('$email','$name','$comment')";
-        mysqli_query($con, $query);
-        echo "<script>alert('massage added successfully')</script>";
-            }else{
-                echo "<script>alert('not added')</script>";
-            }
+    if(!empty($email) && !empty($name) && !is_numeric($name))
+    {
+
+//save to database
+$query = "insert into massages (email,name,comment) values ('$email','$name','$comment')";
+
+mysqli_query($con, $query);
+
+header("location:services.php");
+die;
+
+
+
+
+    }
+
+
+    else{
+        echo "<script>alert('invalid input')</script>";
+    }
 }
+}
+
+
+?>
 
 ?>
 
@@ -67,7 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] =="POST") {
                                 </div>
                             </div>
                             <div class="container">
-                                .<div class="row">
+                                <div class="row">
                                     <div class="col-lg-6">
                                         <p style="color: black; font-size:22px;">services we offer</p>
                                         <ol class="ser-main">
@@ -126,15 +153,7 @@ if ($_SERVER['REQUEST_METHOD'] =="POST") {
                                                     </details>
                                                 </summary>
                                             </li>
-                                            <li>
-                                                <summary>Oli changing
-                                                    <details>
-                                                    <p class="check-info">
-                                                         
-                                                        </p>
-                                                    </details>
-                                                </summary>
-                                            </li>
+                                        
 
 
                                         </ol>
@@ -161,13 +180,15 @@ if ($_SERVER['REQUEST_METHOD'] =="POST") {
                                         </ol>
                                     </div>
                                 </div>
+
                                 <div class="row">
                                     
                                     <div class="col-lg-6 col-sm-12 text-center">
                                         <div class="form22">
                                             <br>
                                     <hr>
-                                        <form method="post" action="services.php" style="background-color: white;">
+                                   
+                                        <form method="POST"  style="background-color: white;">
                                             <label class=" form-label">Email:</label>
                                             <input type="email" name="email" class="form-control"  placeholder="name@example.com">
                                             <label class=" form-label">Your name:</label>

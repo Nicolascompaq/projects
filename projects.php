@@ -102,7 +102,7 @@ if (isset($_POST['add'])){
                 </div>
                 <div class="carousel-inner" ">
                                       <div class=" carousel-item active">
-                  <img src="images/range-rover-right-front-three-quarter.webp" class="d-block w-100 cas_img" alt="...">
+                  <img src="images/638760_c914f90f884e4615a676e8171ff510ed~mv2.jpeg" class="d-block w-100 cas_img" alt="...">
                   <div class="carousel-caption d-none d-md-block" style="color:black;">
                     <h5>Most affordable</h5>
                     <p>Some representative placeholder content for the first slide.</p>
@@ -110,14 +110,14 @@ if (isset($_POST['add'])){
 
                 </div>
                 <div class="carousel-item">
-                  <img src="images/modern-light-green-car-crossover-for-travel-with-black-insets-in-front-3d-render-on-white-background-with-shadow-2A604AC.jpg" class="d-block w-100 cas_img" alt="...">
+                  <img src="images/5-signs-your-engine-needs-a-checkup-1-1623858739829.jpg" class="d-block w-100 cas_img" alt="...">
                   <div class="carousel-caption d-none d-md-block" style="color:black;">
                     <h5>Most classic</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="images/103611185-modern-green-car-crossover-in-front-3d-render-on-white-background-with-shadow.jpg" class="d-block w-100 cas_img" alt="...">
+                  <img src="images/car+paint+shop+bryan+tx-640w.webp" class="d-block w-100 cas_img" alt="...">
                   <div class="carousel-caption d-none d-md-block" style="color:black;">
                     <h5>first choice</h5>
                     <p>Some representative placeholder content for the first slide.</p>

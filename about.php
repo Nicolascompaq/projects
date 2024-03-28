@@ -34,7 +34,7 @@ session_start();
 
                     <div class="hup" style="background-color: rgb(67, 128, 6); width: 100%; height: 100vh; ">
 
-                        <div class="row" id="back-image" style="margin-top: 7%; height: 60vh; background-repeat: no-repeat; background-size: cover;  background-image:url(images/106177799-green-automobile-isolated-on-white-background.png) ; padding-right: 0px;">
+                        <div class="row" id="back-image" style="margin-top: 7%; height: 60vh; background-repeat: no-repeat; background-size: cover;  background-image:url(images/highway-5c6e5194c9e77c0001cda269.jpg) ; padding-right: 0px;">
 
                             <div class="front-image" style=" width: 100%;  background:linear-gradient(200deg, rgb(61, 63, 61) ,rgba(0, 0, 0, 0.651)) ,transparent;">
                                 <h4  style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 100px; color: aliceblue;"> About us
