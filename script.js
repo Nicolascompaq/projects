@@ -1,18 +1,15 @@
 
 var fade = true;
 function faderbutton() {
-  let btn = document.getElementById("$productid");
+  let btn = document.getElementById("click");
   if (fade == true) {
-    btn.innerHTML = "Remove item";
+    btn.innerHTML = "Entered bond";
   
     fade = false;
   } else if (fade == false) {
-    btn.innerHTML = "Add to chart";
+    btn.innerHTML = "Enter bond";
  
     fade = true;
   }
 }
 
-<i style=\"font-size: 11px; position:absolute ;right: 20px; top: 90%;\" class=\"form-text\">$itemleft left</i>
- <i style=\"font-size: 11px; position:absolute ;right: 20px; top: 90%;\" class=\"form-text\">$itemleft left</i>
- <i style=\"font-size: 14px; position:absolute ;left: 2px; top: 64%;\" class=\"form-text mt-lg-4\"> Delivery $$delivery</i>

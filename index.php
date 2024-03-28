@@ -34,7 +34,7 @@ session_start();
                     best car prices and specifications to fit your new ride.
                     <br>welcome customer...
                 </p>
-                <a href="projects.php"><button class="btn1">Enter bond</button></a>
+                <a href="projects.php"><button class="btn1" id="click" onclick="faderbutton()">Enter bond</button></a>
             </div>
             <div class="col-lg-6 col-sm-12 text-lg-center">
                 <img src="images/2019-Jeep-Wrangler-Green-small.png" class="img1 img-fluid">
@@ -46,7 +46,7 @@ session_start();
 
 </div>
 </main>
-
+<script src="script.js"></script>
 <script src="bootstrap\js\bootstrap.min.js"></script>
         
     

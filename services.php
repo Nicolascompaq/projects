@@ -145,7 +145,9 @@ die;
                                             <li>
                                                 <summary>Dashboard refurbish
                                                     <details>
-                                                        <p class="check-info">
+                                                    <p class="check-info">
+                                                    We can definitely help with refurbishing your dashboard! Our team of experts has years of experience in dashboard restoration and can help bring your dashboard back to life.
+                                                                We offer a wide range of services, from cleaning and conditioning to repairing cracks and scratches. We use only high-quality products and materials to ensure that your dashboard looks and feels like new.
                                                                 We can definitely help with refurbishing your dashboard! Our team of experts has years of experience in dashboard restoration and can help bring your dashboard back to life.
                                                                 We offer a wide range of services, from cleaning and conditioning to repairing cracks and scratches. We use only high-quality products and materials to ensure that your dashboard looks and feels like new.
 
@@ -165,17 +167,22 @@ die;
                                             <li>
                                                 <summary>Oli changing
                                                     <details>
+                                                    <p class="check-info">
                                                     We can definitely help with refurbishing your dashboard! Our team of experts has years of experience in dashboard restoration and can help bring your dashboard back to life.
                                                                 We offer a wide range of services, from cleaning and conditioning to repairing cracks and scratches. We use only high-quality products and materials to ensure that your dashboard looks and feels like new.
-                                                    </details>
+                                                    </p>
+                                                            </details>
                                                 </summary>
                                             </li>
                                             <li>
                                                 <summary>Pick up
                                                     <details>
+                                                    <p class="check-info">
                                                     We can definitely help with refurbishing your dashboard! Our team of experts has years of experience in dashboard restoration and can help bring your dashboard back to life.
                                                             We offer a wide range of services, from cleaning and conditioning to repairing cracks and scratches. We use only high-quality products and materials to ensure that your dashboard looks and feels like new.
-                                                    </details>
+                                                    </p>
+                                                   
+                                                        </details>
                                                 </summary>
                                             </li>
 
