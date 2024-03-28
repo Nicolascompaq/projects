@@ -1,7 +1,12 @@
 <?php
 session_start();
-include("client.php");
+
 require_once('connection.php');
+require_once('cards.php');
+
+$query = "SELECT * FROM products";
+$result = mysqli_query($con, $query);
+
 
 if (isset($_POST['remove'])){
     if ($_GET['action'] == 'remove'){
@@ -14,6 +19,7 @@ if (isset($_POST['remove'])){
         }
     }
   }
+  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +34,7 @@ if (isset($_POST['remove'])){
 </head>
 
 <body>
-    <?php include("nav.php"); ?>
+    <?php require_once('nav.php'); ?>
     <?php include("nav3.php"); ?>
     <div class="container-fluid">
         <div class="row ">
@@ -38,23 +44,26 @@ if (isset($_POST['remove'])){
 
                     <?php
 
-                    $total = 0;
-                    if (isset($_SESSION['added-orders'])) {
-                        $product_id = array_column($_SESSION['added-orders'], 'product_id');
+$total = 0;
+if (isset($_SESSION['added-orders'])){
+    $product_id = array_column($_SESSION['added-orders'], 'product_id');
 
-                        $query = "SELECT * FROM products";
-                        $result = mysqli_query($con, $query);
-                        while ($row = mysqli_fetch_assoc($result)) {
-                            foreach ($product_id as $id) {
-                                if ($row['id'] == $id) {
-                                    cartElement($productimg, $productname, $productprice, $productid);
-                                    $total = $total + (int)$productprice;
-                                }
-                            }
-                        }
-                    } else {
-                        echo "<h5>Cart is Empty</h5>";
-                    }
+    $sql = "SELECT * FROM products";
+
+    $result = mysqli_query($con, $sql);
+    while ($row = mysqli_fetch_assoc($result)){
+        foreach ($product_id as $id){
+            if ($row['id'] == $id){
+                cartElement($row['product_image'], $row['product_name'],$row['amount'], $row['delivery_amount'],$row['id']);
+                $total = $total + (int)$row['amount'];
+                
+
+            }
+        }
+    }
+}else{
+    echo "<h5>Cart is Empty</h5>";
+}
 
                     ?>
                 </div>
@@ -74,7 +83,7 @@ if (isset($_POST['remove'])){
                                 echo "<h6>Price (0 items)</h6>";
                             }
                             ?>
-                            <h6>Delivery Charges</h6>
+                            <h6>Transaction Charges</h6>
                             <hr>
                             <h6>Amount Payable</h6>
                         </div>
@@ -85,6 +94,7 @@ if (isset($_POST['remove'])){
                             <h6>$<?php
                                     echo $total;
                                     ?></h6>
+                                 </h6>
                         </div>
                     </div>
                 </div>

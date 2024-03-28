@@ -36,14 +36,12 @@
 
                     <button class="buy" style="margin-left: 7%;" id="buy"><a href="added-orders.php" style="text-decoration:none; font-size: 17px; color:black;"> Buy Now
                         <?php
-
-                        if (isset($_SESSION['added-orders'])){
-                            $count = count($_SESSION['added-orders']);
-                            echo "<span id=\"cart_count\" class=\"text-warning bg-light\">$count</span>";
-                        }else{
-                            echo "<span id=\"cart_count\" class=\"text-warning bg-light\">0</span>";
-                        }
-
+    if (isset($_SESSION['added-orders'])){
+        $count = count($_SESSION['added-orders']);
+        echo "<span id=\"cart_count\" class=\"text-warning bg-light\">$count</span>";
+    }else{
+        echo "<span id=\"cart_count\" class=\"text-warning bg-light \">0</span>";
+    }
                         ?> </a></button>
 
                 </div>

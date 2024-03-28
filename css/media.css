@@ -59,9 +59,50 @@ margin-top: 1%;
     }
     .hup{
         margin-top: 33%;
+       
     
     }
     #nav-3{
         display: none;
     }
+    .top-p1{
+        margin-top: 15%;
+    }
+    .back{
+        margin-top: 65%;
+        width: 100%;
+    }
+    .platfrom{
+        margin-top: 55%;
+        width: 100%;
+    }
+    #ab-data{
+        margin-top: 0%;
+    }
+    #back-image{
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+   
+      
+    }
+    .front-image{
+        height: 60vh;
+        overflow: hidden;
+        font-size: 2rem;
+    }
+  
+    .about-cont{
+        font-size: 14px;
+    }
+    .footer{
+        height:25vh;
+    }
+
+}
+@media only screen and (min-width:1000px){
+    #all{
+        margin-left: 17%;
+    }
+
 }

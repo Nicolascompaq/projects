@@ -21,6 +21,12 @@ body{
     float: right;
     font-size: 17px;
     margin-top: 0.5%;
+    transition: 0.3s;
+}
+.buy:hover{
+    background-color:#ffbf00a8;
+    width: 115px;
+    height: 48px;
 }
 .buy1{
     background-color:#FFBF00;
@@ -225,7 +231,7 @@ margin-top: 150px;
     margin-top: 15%;
 
 }
-.platfrom :nth-child(1){
+.face{
     margin-top: 10px;
     border-left:5px solid rgb(31, 134, 198);
     background-color:rgba(59, 163, 228, 0.578) ;
@@ -235,7 +241,7 @@ margin-top: 150px;
     font-size: 33px;
     backdrop-filter: blur(3px);
 }
-.platfrom :nth-child(2){
+.what{
     margin-top: 10px;
     border-left:5px solid rgb(11, 192, 47);
     background-color:rgba(31, 239, 62, 0.578) ;
@@ -245,7 +251,7 @@ margin-top: 150px;
     font-size: 33px;
     backdrop-filter: blur(3px);
 }
-.platfrom :nth-child(3){
+.insta{
     margin-top: 10px;
     border-left:5px solid rgb(0, 0, 0);
     background-color:rgba(0, 0, 0, 0.578) ;
@@ -255,7 +261,7 @@ margin-top: 150px;
     font-size: 33px;
     backdrop-filter: blur(3px);
 }
-.platfrom :nth-child(4){
+.disc{
     margin-top: 10px;
     border-left:5px solid rgb(243, 9, 9);
     background-color:rgba(246, 72, 45, 0.578) ;
@@ -265,7 +271,7 @@ margin-top: 150px;
     font-size: 33px;
     backdrop-filter: blur(3px);
 }
-.platfrom :nth-child(5){
+.twitter{
     margin-top: 10px;
     border-left:5px solid rgb(40, 30, 231);
     background-color:rgba(14, 104, 240, 0.541) ;
@@ -275,7 +281,7 @@ margin-top: 150px;
     font-size: 33px;
     backdrop-filter: blur(3px);
 }
-.platfrom :nth-child(6){
+.wordpress{
     margin-top: 10px;
     border-left:5px solid rgb(84, 86, 87);
     background-color:rgba(84, 86, 87, 0.452) ;
@@ -433,6 +439,72 @@ border-radius:25px;
     height: fit-content;
     border: none;
 
+}
+#cart_count{
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+position: absolute;
+top: 3px;
+width: 30px;
+text-align: center;
+}
+#save_btn{
+    margin-left: 40px;
+}
+.form{
+    width:100% ;
+    height: 400px;
+}
+.ser-div{
+    margin-top: 4%;
+    padding-left: 3%;
+}
+.focus{
+   font-size: 33px; 
+   font-weight: bold;
+   
+}
+.focus:nth-child(1){
+    color: #CF9;
+}
+.focus1{
+    width:80%;
+    height: fit-content;
+}
+.serv-img{
+    width: 100%;
+    height:300px ;
+    display: flex;
+
+}
+.ser-main{
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    list-style: none;
+}
+summary{
+    color: #5C774D;
+    font-weight: bold;
+    border: 1px  #CF9 solid;
+    margin-top: 10%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+details{
+    color: #CF9;
+    background-color:rgb(61, 63, 61) ;
+}
+.check-info{
+    color: white;
+    font-size:10px ;
+    color:rgb(61, 63, 61) ;
+    font-weight: lighter;
+    padding-left: 3px;
+    background-color: rgb(247, 253, 241);
+        line-height: 2; /* Increase the line spacing between paragraphs */
+      
 }
 /**
 my{
