@@ -38,7 +38,7 @@ function card($productname, $productprice, $productimg, $delivery,$lastprice ,$t
 function cartElement($productimg, $productname, $productprice, $delivery,$productid){
   $element = "
   
-  <form action=\"added-orders.php?action=remove&id=$productid\" method=\"post\" >
+  <form action=\"added-orders.php?action=remove&id=$productid\" method=\"post\"  >
                   <div class=\"border rounded\">
                       <div class=\"row bg-white pb-4\">
                           <div class=\"col-md-3 pl-0\">

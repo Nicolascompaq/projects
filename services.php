@@ -15,7 +15,7 @@ $result = mysqli_query($con, $query);
  
     if(mysqli_num_rows($result) > 0){
  
-        echo "<script>alert('you have already commented')</script>";
+        echo "<script>prompt('you have already commented')</script>";
     }else
    {
    
@@ -142,7 +142,17 @@ die;
                                                     </details>
                                                 </summary>
                                             </li>
-                                            <li>
+                                           
+                                        
+
+
+                                        </ol>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <br>
+                                        <br>
+                                        <ol class="ser-main">
+                                        <li>
                                                 <summary>Dashboard refurbish
                                                     <details>
                                                     <p class="check-info">
@@ -155,15 +165,6 @@ die;
                                                     </details>
                                                 </summary>
                                             </li>
-                                        
-
-
-                                        </ol>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <br>
-                                        <br>
-                                        <ol class="ser-main">
                                             <li>
                                                 <summary>Oli changing
                                                     <details>
@@ -189,10 +190,12 @@ die;
                                         </ol>
                                     </div>
                                 </div>
+.<div class="container">
+    
 
                                 <div class="row">
                                     
-                                    <div class="col-lg-6 col-sm-12 text-center">
+                                    <div class="col-lg-7 col-sm-12 text-center">
                                         <div class="form22">
                                             <br>
                                     <hr>
@@ -209,6 +212,7 @@ die;
                                         </form>
                                         </div>
                                     </div>
+                                </div>
                                 </div>
                             </div>
                             <div class="foot1">

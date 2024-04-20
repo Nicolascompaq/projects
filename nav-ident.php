@@ -6,7 +6,7 @@
                     <a href="index.php" style="text-decoration: none;"><span class="head1"> 4BoND</span></a>
                     <span class="head2">.shop</span>
                     <input type="search" id="search3" placeholder="Hey search for a car here">
-                    <button class="search-btn">search</button>
+                    <button class="search-btn" onclick="search()">search</button>
                     <button id="menu" class="btn btn-primary d-lg-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                     <img src="images/menu.png" style="width:36px; height:36px;">
                     </button>
@@ -22,7 +22,7 @@
                                 <ul class="nav flex-column  ms-lg-0" style="display: flex; position:relative;">
                                     <li class="nav-item"><a class="nav-link " href="index.php">Home</a></li>
                                     <li class="nav-item"><a class="nav-link " href="projects.php">Deals</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="">Service</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="services.php">Service</a></li>
                                     <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
                                     <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
 

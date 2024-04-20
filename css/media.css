@@ -4,6 +4,9 @@
     position: fixed;
     backdrop-filter: blur(3px);
     background-color:#5c774dd4 ;
+    width: 100%;
+
+   
 }
 .buy{
     position: absolute;
@@ -52,7 +55,7 @@ margin-top: 1%;
     }
     .most{
        
-        margin-top: 50%;
+        margin-top: 40%;
     }
     .nav2{
         display: none;
@@ -97,6 +100,9 @@ margin-top: 1%;
     }
     .footer{
         height:25vh;
+    }
+    .shopping-cart{
+        margin-top: 33%;
     }
 
 }

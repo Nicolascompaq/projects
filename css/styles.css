@@ -222,7 +222,7 @@ margin-top: 150px;
     width: 70%;
     height: 250px;
     margin-left: 25%;
-    background-image: url(/images/img4.png);
+    background-image: url(images\106177799-green-automobile-isolated-on-white-background.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain ;
@@ -507,7 +507,10 @@ details{
       
 }
 .form22{
-    margin-top: 80%;
+    margin: auto;
+}
+p3{
+    background-color: red;
 }
 /**
 my{

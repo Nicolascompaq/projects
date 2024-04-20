@@ -69,13 +69,18 @@ if (isset($_POST['add'])){
 
         <div class="col-lg-10 me-lg-0 ">
 
-          <div class="" style="background-color: rgb(67, 128, 6); width: 100%; height: 100vh;">
+          <div class="" style="background-color: rgb(247, 253, 241); width: 100%; height: 100vh;">
 
             <span class="most">Top most latest cars</span>
 
+  
 
 
-            <div class="content2">
+
+
+
+
+            <div class="content2"  id="music">
                  
 
               <?php 
@@ -166,7 +171,29 @@ if (isset($_POST['add'])){
     </div>
   </div>
   </div>
+  <script>
+  function search() {
+    // Get the search input
+    var searchInput = document.getElementById('search3').value;
 
+
+    // Get the list of items
+    var music = document.getElementById('music');
+
+    // Loop through the items and hide those that don't match the search input
+    for (var i = 0; i < music.children.length; i++) {
+      var item = music.children[i];
+      if (item.innerHTML.toLowerCase().indexOf(searchInput.toLowerCase()) === -1) {
+        
+        item.style.display = 'none';
+       
+      } else {
+        item.style.display = 'block';
+        
+      }
+    }
+  }
+</script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
 </body>
